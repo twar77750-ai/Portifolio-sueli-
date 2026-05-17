@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sueli Anjos · Terapeuta Emocional e Sistêmica</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════ LOADER ══════════════════════════════════ -->
+  <div id="loader" class="loader">
+    <div class="loader__circle"></div>
+  </div>
+
+  <!-- ══════════════════════════════════ CURSOR ══════════════════════════════════ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ══════════════════════════════════ NAVBAR ══════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner container">
+      <a href="#inicio" class="navbar__logo">
+        <span class="logo-image"><img src="Imagens/Logo.PNG" alt="Logo" /></span>
+        <span class="logo-name">Sueli Anjos</span>
+      </a>
+
+      <nav class="navbar__nav" id="navMenu">
+        <a href="#inicio" class="nav-link">Início</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#atuacao" class="nav-link">Atuação</a>
+        <a href="#abordagem" class="nav-link">Abordagem</a>
+        <a href="#depoimentos" class="nav-link">Depoimentos</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <a href="#contato" class="btn btn--outline btn--sm navbar__cta">Agendar Consulta</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════ HERO ══════════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg">
+      <div class="hero__blob hero__blob--1"></div>
+      <div class="hero__blob hero__blob--2"></div>
+      <div class="hero__blob hero__blob--3"></div>
+      <div class="hero__grain"></div>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="hero__badge reveal">Sueli Anjos · Terapeuta Emocional e Sistêmica</span>
+        <h1 class="hero__title reveal reveal--delay-1">
+          Transforme sua mente<br />
+          <em>transforme sua vida.</em>
+        </h1>
+        <p class="hero__subtitle reveal reveal--delay-2">
+         nvista em uma vida com mais saúde emocional e mental, com mais plenitude. Estou aqui para te ajudar a cuidar da sua saúde emocional e alcançar as mudanças que você precisa. Juntas vamos construir um caminho de transformação e bem-estar.
+        </p>
+        <div class="hero__actions reveal reveal--delay-3">
+          <a href="#contato" class="btn btn--primary btn--lg">
+            <i data-lucide="calendar-heart"></i>
+            Agendar uma conversa
+          </a>
+          <a href="#sobre" class="btn btn--ghost btn--lg">
+            Conhecer mais
+            <i data-lucide="arrow-down"></i>
+          </a>
+        </div>
+
+        <div class="hero__stats reveal reveal--delay-4">
+          <div class="stat">
+            <span class="stat__number" data-target="5">0</span><span class="stat__unit">+</span>
+            <span class="stat__label">anos de experiência</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <span class="stat__number" data-target="500">0</span><span class="stat__unit">+</span>
+            <span class="stat__label">pacientes atendidos</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <span class="stat__number" data-target="100">0</span><span class="stat__unit">%</span>
+            <span class="stat__label">sigilo e ética</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__photo-wrap reveal reveal--delay-2">
+        <div class="hero__photo-frame">
+          <img src="Imagens/Foto pessoal.png" alt="Sueli Anjos" />
+        </div>
+        <div class="hero__photo-badge">
+          <i data-lucide="shield-check"></i>
+          Atendimento Online & Presencial
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-indicator__line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ SOBRE ══════════════════════════════════ -->
+  <section class="sobre section" id="sobre">
+    <div class="container sobre__inner">
+      <div class="sobre__visual">
+        <div class="sobre__card sobre__card--main">
+          <div class="sobre__photo-placeholder">
+  <img src="Imagens/foto-sobre-mim.png" alt="Sueli Anjos" class="sobre__photo">
+</div>
+        </div>
+        <div class="sobre__card sobre__card--accent reveal reveal--delay-1">
+          <i data-lucide="heart-handshake"></i>
+          <p>"Cada pessoa carrega uma história única. Meu papel é caminhar ao seu lado."</p>
+        </div>
+        <div class="sobre__tag sobre__tag--1 reveal reveal--delay-2">
+          <i data-lucide="graduation-cap"></i> Terapeuta Emocional e Sistêmica
+        </div>
+        <div class="sobre__tag sobre__tag--2 reveal reveal--delay-3">
+          <i data-lucide="award"></i> Master Terapeuta TRG
+        </div>
+      </div>
+
+      <div class="sobre__content">
+        <div class="section-label reveal">Sobre mim</div>
+        <h2 class="section-title reveal reveal--delay-1">
+          Conheça a terapeuta<br /><em>que vai te acompanhar</em>
+        </h2>
+        <p class="sobre__text reveal reveal--delay-2">
+          Sou Sueli Anjos, terapeuta emocional e sistêmica, com formação em Master Terapeuta TRG e Psicossomática, Terapia Sistêmica e Neurociência Clínica. Dedico minha vida a ajudar pessoas a superarem seus desafios emocionais e a se reconectarem com sua verdadeira essência.
+        </p>
+        <p class="sobre__text reveal reveal--delay-3">
+          Com mais de 5 anos de experiência, combino técnicas avançadas em terapias profundas, trabalhando direto nas raízes dos problemas emocionais do passado e do presente — ansiedade, traumas da infância, autoestima, luto, relacionamentos e inteligência emocional.
+        </p>
+        <p class="sobre__text reveal reveal--delay-3">
+          Ofereço um espaço seguro e acolhedor para sua jornada de autocura e autoconhecimento. Cada sessão é pensada para gerar mudanças reais e profundas na sua vida.
+        </p>
+
+        <div class="sobre__formacao reveal reveal--delay-4">
+          <div class="formacao-item">
+            <i data-lucide="book-open"></i>
+            <div>
+              <strong>Graduação em Psicologia</strong>
+              <span>Universidade Federal · 2015</span>
+            </div>
+          </div>
+          <div class="formacao-item">
+            <i data-lucide="brain"></i>
+            <div>
+              <strong>Pós-graduação em TCC</strong>
+              <span>Instituto ___ · 2017</span>
+            </div>
+          </div>
+          <div class="formacao-item">
+            <i data-lucide="heart"></i>
+            <div>
+              <strong>Especialização em Trauma</strong>
+              <span>___ · 2020</span>
+            </div>
+          </div>
+          <div class="formacao-item">
+            <i data-lucide="users"></i>
+            <div>
+              <strong>Formação em Mindfulness</strong>
+              <span>___ · 2022</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contato" class="btn btn--primary reveal reveal--delay-5">
+          Vamos conversar <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ ATUAÇÃO ══════════════════════════════════ -->
+  <section class="atuacao section" id="atuacao">
+    <div class="atuacao__bg">
+      <div class="atuacao__shape"></div>
+    </div>
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Especialidades</div>
+        <h2 class="section-title">Áreas de <em>atuação</em></h2>
+        <p class="section-subtitle">
+          Ofereço suporte especializado em diversas áreas da saúde mental,
+          com abordagem humanizada e baseada em evidências.
+        </p>
+      </div>
+
+      <div class="atuacao__grid">
+
+        <div class="atuacao-card reveal" data-delay="0">
+          <div class="atuacao-card__icon">
+            <i data-lucide="brain-circuit"></i>
+          </div>
+          <h3>Ansiedade & Estresse</h3>
+          <p>Identificação de gatilhos e desenvolvimento de estratégias para gerenciar a ansiedade no dia a dia.</p>
+          <div class="atuacao-card__footer">
+            <span class="tag">TCC</span>
+            <span class="tag">Mindfulness</span>
+          </div>
+        </div>
+
+        <div class="atuacao-card reveal" data-delay="1">
+          <div class="atuacao-card__icon">
+            <i data-lucide="cloud-rain"></i>
+          </div>
+          <h3>Depressão</h3>
+          <p>Acompanhamento cuidadoso para atravessar períodos difíceis, resgatando o prazer e a motivação para a vida.</p>
+          <div class="atuacao-card__footer">
+            <span class="tag">TCC</span>
+            <span class="tag">ACT</span>
+          </div>
+        </div>
+
+        <div class="atuacao-card reveal" data-delay="2">
+          <div class="atuacao-card__icon">
+            <i data-lucide="heart-crack"></i>
+          </div>
+          <h3>Luto & Perdas</h3>
+          <p>Suporte especializado para processar perdas significativas e encontrar novos sentidos na vida.</p>
+          <div class="atuacao-card__footer">
+            <span class="tag">Humanista</span>
+            <span class="tag">Trauma</span>
+          </div>
+        </div>
+
+        <div class="atuacao-card reveal" data-delay="3">
+          <div class="atuacao-card__icon">
+            <i data-lucide="shield-alert"></i>
+          </div>
+          <h3>Trauma & TEPT</h3>
+          <p>Abordagem cuidadosa e segura para reprocessar experiências traumáticas e restaurar o bem-estar.</p>
+          <div class="atuacao-card__footer">
+            <span class="tag">Trauma-informed</span>
+            <span class="tag">EMDR</span>
+          </div>
+        </div>
+
+        <div class="atuacao-card reveal" data-delay="4">
+          <div class="atuacao-card__icon">
+            <i data-lucide="users-round"></i>
+          </div>
+          <h3>Relacionamentos</h3>
+          <p>Trabalho com padrões relacionais, limites saudáveis, autoestima e vínculos afetivos.</p>
+          <div class="atuacao-card__footer">
+            <span class="tag">TCC</span>
+            <span class="tag">Apego</span>
+          </div>
+        </div>
+
+        <div class="atuacao-card reveal" data-delay="5">
+          <div class="atuacao-card__icon">
+            <i data-lucide="sparkles"></i>
+          </div>
+          <h3>Autoconhecimento</h3>
+          <p>Processo de descoberta de quem você é, seus valores, potenciais e o que deseja para sua vida.</p>
+          <div class="atuacao-card__footer">
+            <span class="tag">Humanista</span>
+            <span class="tag">Existencial</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ ABORDAGEM ══════════════════════════════════ -->
+  <section class="abordagem section" id="abordagem">
+    <div class="container abordagem__inner">
+      <div class="abordagem__content">
+        <div class="section-label reveal">Como trabalho</div>
+        <h2 class="section-title reveal reveal--delay-1">
+          Minha abordagem<br /><em>terapêutica</em>
+        </h2>
+        <p class="abordagem__text reveal reveal--delay-2">
+          Utilizo principalmente a <strong>Terapia Cognitivo-Comportamental (TCC)</strong>,
+          integrando recursos de Mindfulness, ACT e abordagem humanista para oferecer
+          um atendimento completo e individualizado.
+        </p>
+
+        <div class="abordagem__steps">
+          <div class="step reveal reveal--delay-2">
+            <div class="step__number">01</div>
+            <div class="step__content">
+              <h4>Acolhimento inicial</h4>
+              <p>Primeira sessão dedicada a te conhecer, entender suas queixas e estabelecer os objetivos da terapia.</p>
+            </div>
+          </div>
+          <div class="step reveal reveal--delay-3">
+            <div class="step__number">02</div>
+            <div class="step__content">
+              <h4>Plano terapêutico</h4>
+              <p>Criamos juntos um plano personalizado, com metas claras e estratégias adaptadas para você.</p>
+            </div>
+          </div>
+          <div class="step reveal reveal--delay-4">
+            <div class="step__number">03</div>
+            <div class="step__content">
+              <h4>Acompanhamento contínuo</h4>
+              <p>Sessões regulares com reavaliação constante do progresso e ajuste das estratégias.</p>
+            </div>
+          </div>
+          <div class="step reveal reveal--delay-5">
+            <div class="step__number">04</div>
+            <div class="step__content">
+              <h4>Autonomia & Crescimento</h4>
+              <p>Você sai da terapia com ferramentas para continuar crescendo de forma independente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="abordagem__visual">
+        <div class="abordagem__card reveal">
+          <div class="abordagem__icon-circle">
+            <i data-lucide="leaf"></i>
+          </div>
+          <h3>Atendimento Online</h3>
+          <p>Sessões por videochamada segura, de onde você estiver, com a mesma qualidade e acolhimento.</p>
+          <ul>
+            <li><i data-lucide="check"></i> Plataforma segura e criptografada</li>
+            <li><i data-lucide="check"></i> Flexibilidade de horários</li>
+            <li><i data-lucide="check"></i> Atendo todo o Brasil</li>
+          </ul>
+        </div>
+        <div class="abordagem__card reveal reveal--delay-2">
+          <div class="abordagem__icon-circle abordagem__icon-circle--alt">
+            <i data-lucide="home"></i>
+          </div>
+          <h3>Atendimento Presencial</h3>
+          <p>Consultório estruturado para oferecer conforto, privacidade e um ambiente terapêutico ideal.</p>
+          <ul>
+            <li><i data-lucide="check"></i> Ambiente aconchegante e seguro</li>
+            <li><i data-lucide="check"></i> Localização acessível</li>
+            <li><i data-lucide="check"></i> Cidade / Endereço aqui</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ DEPOIMENTOS ══════════════════════════════════ -->
+  <section class="depoimentos section" id="depoimentos">
+    <div class="depoimentos__bg">
+      <div class="depoimentos__blob"></div>
+    </div>
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Depoimentos</div>
+        <h2 class="section-title">O que dizem<br /><em>meus pacientes</em></h2>
+      </div>
+
+      <div class="depoimentos__slider" id="slider">
+        <div class="depoimentos__track" id="sliderTrack">
+
+          <div class="depoimento-card">
+            <div class="depoimento-card__stars">
+              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+            </div>
+            <p>"A terapia com a Ana Beatriz transformou minha vida. Aprendi a lidar com minha ansiedade e hoje me sinto muito mais leve e presente."</p>
+            <div class="depoimento-card__author">
+              <div class="author-avatar">M</div>
+              <div>
+                <strong>Mariana S.</strong>
+                <span>Paciente há 2 anos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="depoimento-card">
+            <div class="depoimento-card__stars">
+              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+            </div>
+            <p>"Encontrei na terapia um espaço genuíno de acolhimento. A profissionalismo e a empatia são incomparáveis. Recomendo de coração."</p>
+            <div class="depoimento-card__author">
+              <div class="author-avatar">R</div>
+              <div>
+                <strong>Rafael C.</strong>
+                <span>Paciente há 1 ano</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="depoimento-card">
+            <div class="depoimento-card__stars">
+              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+            </div>
+            <p>"Depois de passar por um luto muito difícil, a Ana Beatriz me ajudou a encontrar sentido e seguir em frente. Sou eternamente grata."</p>
+            <div class="depoimento-card__author">
+              <div class="author-avatar">C</div>
+              <div>
+                <strong>Claudia M.</strong>
+                <span>Paciente há 3 anos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="depoimento-card">
+            <div class="depoimento-card__stars">
+              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+            </div>
+            <p>"O atendimento online foi surpreendente. Mesmo à distância, me senti completamente acolhido. A qualidade é a mesma do presencial."</p>
+            <div class="depoimento-card__author">
+              <div class="author-avatar">P</div>
+              <div>
+                <strong>Pedro A.</strong>
+                <span>Atendimento online</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="slider-controls">
+        <button class="slider-btn" id="prevBtn" aria-label="Anterior">
+          <i data-lucide="chevron-left"></i>
+        </button>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button class="slider-btn" id="nextBtn" aria-label="Próximo">
+          <i data-lucide="chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ CONTATO ══════════════════════════════════ -->
+  <section class="contato section" id="contato">
+    <div class="container contato__inner">
+      <div class="contato__info">
+        <div class="section-label reveal">Contato</div>
+        <h2 class="section-title reveal reveal--delay-1">
+          Vamos dar o<br /><em>primeiro passo?</em>
+        </h2>
+        <p class="contato__text reveal reveal--delay-2">
+          Entre em contato para agendar sua consulta ou tirar dúvidas.
+          Responderei em até 24 horas. O primeiro passo é o mais importante.
+        </p>
+
+        <div class="contato__canais reveal reveal--delay-3">
+
+          <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
+             target="_blank" rel="noopener" class="canal-card canal-card--whatsapp">
+            <div class="canal-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.54 4.057 1.486 5.771L.057 23.857a.5.5 0 0 0 .603.63l6.297-1.651A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.795 9.795 0 0 1-5.007-1.37l-.36-.213-3.727.977.994-3.622-.234-.373A9.79 9.79 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+              </svg>
+            </div>
+            <div class="canal-card__text">
+              <strong>WhatsApp</strong>
+              <span>(00) 00000-0000</span>
+            </div>
+            <i data-lucide="arrow-up-right" class="canal-card__arrow"></i>
+          </a>
+
+          <a href="https://instagram.com/seu_usuario"
+             target="_blank" rel="noopener" class="canal-card canal-card--instagram">
+            <div class="canal-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+              </svg>
+            </div>
+            <div class="canal-card__text">
+              <strong>Instagram</strong>
+              <span>@seu_usuario</span>
+            </div>
+            <i data-lucide="arrow-up-right" class="canal-card__arrow"></i>
+          </a>
+
+          <a href="mailto:contato@email.com" class="canal-card canal-card--email">
+            <div class="canal-card__icon">
+              <i data-lucide="mail"></i>
+            </div>
+            <div class="canal-card__text">
+              <strong>E-mail</strong>
+              <span>contato@email.com</span>
+            </div>
+            <i data-lucide="arrow-up-right" class="canal-card__arrow"></i>
+          </a>
+
+          <div class="canal-card canal-card--local">
+            <div class="canal-card__icon">
+              <i data-lucide="map-pin"></i>
+            </div>
+            <div class="canal-card__text">
+              <strong>Consultório</strong>
+              <span>Rua ___, N — Cidade/UF</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contato__horarios reveal reveal--delay-4">
+          <h4><i data-lucide="clock"></i> Horários de atendimento</h4>
+          <div class="horarios-grid">
+            <div class="horario"><span>Segunda a Sexta</span><strong>08h – 20h</strong></div>
+            <div class="horario"><span>Sábado</span><strong>09h – 14h</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contato__form-wrap reveal reveal--delay-2">
+        <form class="contato-form" id="contactForm" novalidate>
+          <h3>Envie uma mensagem</h3>
+          <p class="form-subtitle">Seus dados são tratados com total sigilo e privacidade.</p>
+
+          <div class="form-group">
+            <label for="nome">Nome completo</label>
+            <div class="input-wrap">
+              <i data-lucide="user"></i>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <div class="input-wrap">
+              <i data-lucide="mail"></i>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="telefone">Telefone / WhatsApp</label>
+            <div class="input-wrap">
+              <i data-lucide="phone"></i>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="assunto">Assunto</label>
+            <div class="input-wrap input-wrap--select">
+              <i data-lucide="tag"></i>
+              <select id="assunto" name="assunto" required>
+                <option value="">Selecione o motivo</option>
+                <option>Agendamento de consulta</option>
+                <option>Dúvidas sobre atendimento</option>
+                <option>Valores e formas de pagamento</option>
+                <option>Outros</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <div class="input-wrap input-wrap--textarea">
+              <i data-lucide="message-square"></i>
+              <textarea id="mensagem" name="mensagem" rows="4" placeholder="Como posso te ajudar?" required></textarea>
+            </div>
+          </div>
+
+          <div class="form-privacy">
+            <i data-lucide="shield-check"></i>
+            <small>Seus dados são protegidos e jamais serão compartilhados com terceiros. Sigilo total garantido.</small>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--block">
+            <i data-lucide="send"></i>
+            Enviar mensagem
+          </button>
+
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <i data-lucide="check-circle"></i>
+            Mensagem enviada! Responderei em breve.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ FOOTER ══════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#inicio" class="navbar__logo">
+          <span class="logo-mark">A</span>
+          <span class="logo-name">Ana Beatriz</span>
+        </a>
+        <p>Psicóloga Clínica · CRP 00/00000</p>
+      </div>
+
+      <div class="footer__nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#atuacao">Atuação</a>
+        <a href="#abordagem">Abordagem</a>
+        <a href="#contato">Contato</a>
+      </div>
+
+      <div class="footer__social">
+        <a href="https://wa.me/5500000000000" target="_blank" rel="noopener" class="social-btn social-btn--whatsapp" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.54 4.057 1.486 5.771L.057 23.857a.5.5 0 0 0 .603.63l6.297-1.651A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.795 9.795 0 0 1-5.007-1.37l-.36-.213-3.727.977.994-3.622-.234-.373A9.79 9.79 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+          </svg>
+        </a>
+        <a href="https://instagram.com/seu_usuario" target="_blank" rel="noopener" class="social-btn social-btn--instagram" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+          </svg>
+        </a>
+        <a href="mailto:contato@email.com" class="social-btn social-btn--email" aria-label="E-mail">
+          <i data-lucide="mail"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span>© 2025 Ana Beatriz · Psicóloga Clínica. Todos os direitos reservados.</span>
+        <span>CRP 00/00000 · Sigilo garantido pelo Código de Ética do CFP</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════ FLOATING BUTTONS ══════════════════════════════════ -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
+       target="_blank" rel="noopener"
+       class="floating-btn floating-btn--whatsapp"
+       aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.54 4.057 1.486 5.771L.057 23.857a.5.5 0 0 0 .603.63l6.297-1.651A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.795 9.795 0 0 1-5.007-1.37l-.36-.213-3.727.977.994-3.622-.234-.373A9.79 9.79 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+      </svg>
+      <span class="floating-btn__tooltip">Falar no WhatsApp</span>
+    </a>
+    <a href="https://instagram.com/seu_usuario"
+       target="_blank" rel="noopener"
+       class="floating-btn floating-btn--instagram"
+       aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+      </svg>
+      <span class="floating-btn__tooltip">Seguir no Instagram</span>
+    </a>
+  </div>
+
+  <!-- ══════════════════════════════════ BACK TO TOP ══════════════════════════════════ -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script>lucide.createIcons();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>

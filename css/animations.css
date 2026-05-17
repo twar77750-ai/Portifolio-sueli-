@@ -1,0 +1,138 @@
+/* ═══════════════════════════════════════
+   ANIMATIONS — Reveal, Counters, Efeitos
+═══════════════════════════════════════ */
+
+/* ── REVEAL ON SCROLL ────────────────*/
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s var(--ease-out),
+    transform 0.7s var(--ease-out);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal--delay-1  { transition-delay: 0.1s; }
+.reveal--delay-2  { transition-delay: 0.2s; }
+.reveal--delay-3  { transition-delay: 0.3s; }
+.reveal--delay-4  { transition-delay: 0.4s; }
+.reveal--delay-5  { transition-delay: 0.5s; }
+
+/* Staggered atuacao-cards */
+[data-delay="0"] { transition-delay: 0.05s; }
+[data-delay="1"] { transition-delay: 0.15s; }
+[data-delay="2"] { transition-delay: 0.25s; }
+[data-delay="3"] { transition-delay: 0.35s; }
+[data-delay="4"] { transition-delay: 0.45s; }
+[data-delay="5"] { transition-delay: 0.55s; }
+
+/* ── PAGE ENTRANCE ───────────────────*/
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ── HOVERING PHOTO ──────────────────*/
+.hero__photo-frame {
+  animation: photoHover 6s ease-in-out infinite;
+}
+
+@keyframes photoHover {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+
+/* ── SOBRE TAGS FLOAT ────────────────*/
+.sobre__tag--1 {
+  animation: tagFloat1 5s ease-in-out infinite;
+}
+
+.sobre__tag--2 {
+  animation: tagFloat2 7s ease-in-out infinite 1s;
+}
+
+@keyframes tagFloat1 {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-6px); }
+}
+
+@keyframes tagFloat2 {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+
+/* ── ATUACAO CARD ICON ───────────────*/
+.atuacao-card:hover .atuacao-card__icon [data-lucide] {
+  animation: iconBounce 0.4s var(--ease-out);
+}
+
+@keyframes iconBounce {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* ── STEP NUMBER HIGHLIGHT ───────────*/
+.step {
+  transition: transform var(--dur-base) var(--ease-out);
+}
+
+.step:hover { transform: translateX(6px); }
+
+/* ── FLOATING BTN PULSE ──────────────*/
+.floating-btn--whatsapp::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: inherit;
+  border: 2px solid #25D366;
+  opacity: 0;
+  animation: pulse 2.5s ease-out infinite;
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+/* ── DEPOIMENTO CARD ENTRANCE ────────*/
+.depoimento-card {
+  transition: all var(--dur-base) var(--ease-out);
+}
+
+.depoimento-card:hover {
+  border-color: var(--color-primary-light);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+/* ── FORM INPUT FOCUS RING ───────────*/
+.input-wrap input:focus ~ .input-wrap__border,
+.input-wrap textarea:focus ~ .input-wrap__border {
+  opacity: 1;
+}
+
+/* ── NAVBAR LINK ACTIVE INDICATOR ───*/
+@keyframes navActive {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+/* ── SMOOTH PAGE LOAD ────────────────*/
+body {
+  animation: fadeIn 0.3s ease-out;
+}
